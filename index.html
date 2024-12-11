@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leahs Healing</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="img/לוגו-02.svg" alt="logo" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="#hero-446" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#services-1177" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#reviews-567" class="cs-li-link">
+                                Testimonials
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#meet-team-699" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#contact-983" class="cs-button-solid cs-nav-button">Book Now</a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button> -->
+        </div>
+    </header>
+                                
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-446">
+        <div class="cs-container">
+            <div class="cs-content">
+                <!-- <span class="cs-tag">Tag Example</span> -->
+                <h1 class="cs-title">Premium Healing Serivces</h1>
+                <p class="cs-text">
+                    Discover holistic therapies that restore balance, reduce stress, and rejuvenate your mind, body, and soul.
+                </p>
+            </div>
+            <!--Stats Section-->
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-number">5</span>
+                    <span class="cs-desc">Years of Experience</span>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">1k+</span>
+                    <span class="cs-desc">Happy Customers</span>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">99%</span>
+                    <span class="cs-desc">Satisfaction Rate</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Background Image -->
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="img/hero-foot-message.jpg">
+            <source media="(min-width: 601px)" srcset="img/hero-foot-message.jpg">
+            <img loading="lazy" decoding="async" src="img/hero-foot-message.jpg" alt="leaf" width="1920" height="1000" aria-hidden="true">
+        </picture>
+    </section>
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-1177">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">my services</span>
+                <h2 class="cs-title">My Natural Healing Technics</h2>
+                <p class="cs-text"> Experience a range of natural healing techniques designed to soothe, balance, and revitalize your entire being. </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="img/reflexology-icon.svg"icon"
+                            height="48" />
+                    </picture>
+                    <h3 class="cs-h3">REFLEXOLOGY</h3>
+                    <p class="cs-item-text">
+                        What is Check Engine Light? There are many variations of passages of Lorem Ipsum available, but the
+                        majority
+                        have...
+                    </p>
+                    <a href="" class="cs-link">
+                        Read More
+                        <img class="cs-arrow" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg" alt="icon"
+                            width="20" height="20" aria-hidden="true" />
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="img/flowers-icon.svg" alt="icon" width="48"
+                            height="48" />
+                    </picture>
+                    <h3 class="cs-h3">BACH FLOWERS</h3>
+                    <p class="cs-item-text">
+                        Our featured services Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia
+                        consequuntur...
+                    </p>
+                    <a href="" class="cs-link">
+                        Read More
+                        <img class="cs-arrow" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg" alt="icon"
+                            width="20" height="20" aria-hidden="true" />
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="img/chakra-icon.svg" alt="icon" width="48"
+                            height="48" />
+                    </picture>
+                    <h3 class="cs-h3">CHAKRA HEALING</h3>
+                    <p class="cs-item-text">
+                        Our services Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur
+                        magni...
+                    </p>
+                    <a href="" class="cs-link">
+                        Read More
+                        <img class="cs-arrow" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg" alt="icon"
+                            width="20" height="20" aria-hidden="true" />
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="img/letter-chinese.svg" alt="icon"
+                            height="48" />
+                    </picture>
+                    <h3 class="cs-h3">REIKI</h3>
+                    <p class="cs-item-text">
+                        What is Check Engine Light? There are many variations of passages of Lorem Ipsum available, but the
+                        majority
+                        have...
+                    </p>
+                    <a href="" class="cs-link">
+                        Read More
+                        <img class="cs-arrow" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg" alt="icon"
+                            width="20" height="20" aria-hidden="true" />
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="img/head-icon.svg" alt="icon" width="48"
+                            height="48" />
+                    </picture>
+                    <h3 class="cs-h3">ACCESS BARS</h3>
+                    <p class="cs-item-text">
+                        Our featured services Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia
+                        consequuntur...
+                    </p>
+                    <a href="" class="cs-link">
+                        Read More
+                        <img class="cs-arrow" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg" alt="icon"
+                            width="20" height="20" aria-hidden="true" />
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="img/dance-icon.svg" alt="icon" width="48"
+                            height="48" />
+                    </picture>
+                    <h3 class="cs-h3">IMPRO DANCE</h3>
+                    <p class="cs-item-text">
+                        Our services Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur
+                        magni...
+                    </p>
+                    <a href="" class="cs-link">
+                        Read More
+                        <img class="cs-arrow" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg" alt="icon"
+                            width="20" height="20" aria-hidden="true" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews-567">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">My Reviews</span>
+                <h2 class="cs-title">What My Clients Say</h2>
+                <!-- <p class="cs-text">
+                    Vitae ultricies leo integer malesuada nunc vel. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Viverra aliquet eget sit amet tellus cras adipiscing. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit
+                </p> -->
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <!--Blue Quote-->
+                    <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                    <p class="cs-item-text">
+                        Approximately six months before my mom’s passing, I’ve felt that it was too much for me.
+                        I was crying a lot, bearing my mother’s pain and mine altogether… I didn’t know how to handle it.
+                        Leah with her patience with her smile, her professionalism, helped me a lot with the use of the Bach flower and the reflexology.
+                        With the first one I immediately felt a sense of relief, inner peace, calm, more confidence with what the future holds.
+                        With the reflexology my body learned how to deal with stress and how to rest.
+                        Highly appreciated and recommend!!                    
+                    </p>
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="img/Review1_photo.jpg" decoding="async" alt="profile" aria-hidden="true">
+                        </picture>
+                        <span class="cs-name">
+                            Emma
+                            <span class="cs-job">Lawer</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <!--Blue Quote-->
+                    <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                    <p class="cs-item-text">
+                        Leahs dance workshops are first of all fun! The way she gets the women to participate in the movement exercises facilitates connection between people, loss of social distance and awkwardness,
+                        and fosters closeness. This builds the ground for developing friendships to participants and that is already healing itself! The movement exercises allowed me to explore my own body and to 
+                        learn from other participants through imitating their intuitive movements. We are all so different yet we have so many shared habits and beliefs like the critic in ourselves and towards others around us.
+                        It was a pleasure for all levels of my body and my soul.
+                        Bottom line: Leah is a true healer and all of her treatments are highly recommended :)                    </p>
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="img/profile_placeholder_women.jpg" decoding="async" alt="profile" width="30" height="30" aria-hidden="true">
+                        </picture>
+                        <span class="cs-name">
+                            Sofia Dossmann
+                            <span class="cs-job">Content Writer</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <!--Blue Quote-->
+                    <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                    <p class="cs-item-text">
+                        Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo
+                    </p>
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                        </picture>
+                        <span class="cs-name">
+                            Benjamin Norris
+                            <span class="cs-job">Business analyst</span>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+                                
+    <!-- ============================================ -->
+    <!--                Meet The Team                 -->
+    <!-- ============================================ -->
+
+    <section id="meet-team-699">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">The Team</span>
+                <h2 class="cs-title">Who am I</h2>
+                <p class="cs-text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <p class="cs-text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <!-- <a href="" class="cs-button-solid">View All Members</a> -->
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc1.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc1.jpg" alt="doctor" width="305" height="407">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Arlene MacCoy</span>
+                        <span class="cs-job">Aesthetic Expert</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc3.jpg" alt="doctor" width="305" height="407">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Arlene MacCoy</span>
+                        <span class="cs-job">Aesthetic Expert</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc3.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc3.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc3.jpg" alt="doctor" width="305" height="407">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Arlene MacCoy</span>
+                        <span class="cs-job">Aesthetic Expert</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc4.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc4.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc4.jpg" alt="doctor" width="305" height="407">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Arlene MacCoy</span>
+                        <span class="cs-job">Aesthetic Expert</span>
+                    </div>
+                </li>
+                <li class="cs-graphic" aria-hidden="true">
+                    <!--Zig Zag Graphic-->
+                    <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fzigzag.svg" loading="lazy" decoding="async" alt="zigzag" width="983" height="416">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <!--
+        To add a 5th or 6th gallery or more, copy and paste the cs-button and change it's data-filter to th next number, in this case it's 5. Do the dame to the cs-gallery and its data-category number. And thats it!
+    -->
+
+    <section id="gallery-1449">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Gallery</span>
+                    <h2 class="cs-title">My Photo Gallery</h2>
+                </div>
+                <div class="cs-button-group">
+                    <button class="cs-button" data-filter="one">
+                        Reflexology
+                    </button>
+                    <button class="cs-button" data-filter="two">
+                        Impro Dance
+                    </button>
+                    <button class="cs-button" data-filter="three">
+                        Bach Flowers
+                    </button>
+                    <button class="cs-button" data-filter="four">
+                        Access Bars
+                    </button>
+                </div>
+            </div>
+            <div class="cs-gallery-wrapper">
+                <!--Gallery 1-->
+                <div class="cs-gallery" data-category="one">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_reflexology1.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_reflexology1.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_reflexology1.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_reflexology9.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_reflexology9.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_reflexology9.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_reflexology3.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_reflexology3.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_reflexology3.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_reflexology4.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_reflexology4.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_reflexology4.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_reflexology5.jpg" >
+                        <source media="(min-width: 601px)" srcset="img/mom_reflexology5.jpg" >
+                        <img loading="lazy" decoding="async" src="img/mom_reflexology5.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 6-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_reflexology6..jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_reflexology6..jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_reflexology6..jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 7-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_reflexology7.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_reflexology7.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_reflexology7.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 8-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_reflexology8.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_reflexology8.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_reflexology8.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                </div>
+                <!--Gallery 2-->
+                <div class="cs-gallery cs-hidden" data-category="two">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_improdance1.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_improdance1.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_improdance1.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_improdance2.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_improdance2.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_improdance2.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_improdance3.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_improdance3.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_improdance3.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_improdance4.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_improdance4.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_improdance4.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_improdance5.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_improdance5.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_improdance5.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 6-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_improdance6.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_improdance6.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_improdance6.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 7-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_improdance8.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_improdance8.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_improdance8.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 8-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_improdance7.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_improdance7.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_improdance7.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                </div>
+                <!--Gallery 3-->
+                <div class="cs-gallery cs-hidden" data-category="three">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_bachflowers.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_bachflowers.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_bachflowers.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_bachflowers.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_bachflowers.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_bachflowers.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 6-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 7-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 8-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                </div>
+                <!--Gallery 4-->
+                <div class="cs-gallery cs-hidden" data-category="four">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_accessbars1.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_accessbars1.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_accessbars1.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_accessbars2.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_accessbars2.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_accessbars2.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/mom_accessbars3.jpg">
+                        <source media="(min-width: 601px)" srcset="img/mom_accessbars3.jpg">
+                        <img loading="lazy" decoding="async" src="img/mom_accessbars3.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 6-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 7-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 8-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+                                
+    <!-- ============================================ -->
+    <!--                   Contact                    -->
+    <!-- ============================================ -->
+
+    <section id="contact-983">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Contact Me</span>
+                <h2 class="cs-title">Make An Appointment</h2>
+            </div>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-983" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-983" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label">
+                    Phone
+                    <input class="cs-input" required type="text" id="phone-983" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label">
+                    Email
+                    <input class="cs-input" required type="text" id="email-983" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label">
+                    Date
+                    <input class="cs-input" required type="date" id="hear-983" name="heat" placeholder="Google">
+                </label>
+                <!-- <label class="cs-label cs-message">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-983" placeholder="Write message..."></textarea>
+                </label> -->
+                <div class="cs-wrapper">
+                    <button class="cs-button-solid cs-submit" type="submit">Book Appointment</button>
+                </div>
+            </form>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            Mobile Image
+            <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon-bg-m.jpg"> -->
+            <!--Tablet and above Image-->
+            <!-- <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon-bg.jpg"> -->
+            <img loading="lazy" decoding="async" src="img/feet_on_sand.jpg" alt="hair salon" width="2500" height="770">
+        </picture>
+    </section>
+                                
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-1340">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <h2 class="cs-title">Discover the Path to Natural Healing and Wellness</h2>
+                <div class="cs-social">
+                    <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-1a.svg" alt="facebook" width="11" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit twitter profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-1a.svg" alt="twitter" width="6" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-1a.svg" alt="instagram" width="11" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit youtube profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-1a.svg" alt="instagram" width="11" height="11">
+                    </a>
+                </div>
+            </div>
+            <!-- Links -->
+            <div class="cs-ul-wrapper">
+                <span class="cs-header">Quick Links</span>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a class="cs-link" href="#hero-446">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a class="cs-link" href="#services-1177">Services</a>
+                    </li>
+                    <li class="cs-li">
+                        <a class="cs-link" href="#reviews-567">Testimonials</a>
+                    </li>
+                    <li class="cs-li">
+                        <a class="cs-link" href="#meet-team-699">About Me</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-ul-wrapper">
+                <!-- Contact Info -->
+                <span class="cs-header">Contact</span>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a class="cs-link" href="tel:555-497-1900">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="phone icon" width="24" height="24">
+                            +972 0584147326
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a class="cs-link" href="mailto:office@email.com">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/email-1a.svg" alt="email icon" width="24" height="24">
+                            lhleahheinrich@gmail.com
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <!--Make this link go to the google page-->
+                        <a class="cs-link" href="" target="_blank">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-1a.svg" alt="pin icon" width="24" height="24">
+                            Tel Aviv,Israel
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cs-bottom">
+            <span class="cs-credit">
+                © Copyright 2023 <a href="" class="cs-credit-link" target="_blank">Invetex</a>
+            </span>
+            <div class="cs-bottom-links">
+                <a href="" class="cs-bottom-link">Privacy Policy</a>
+                <a href="" class="cs-bottom-link">Terms Of Use</a>
+            </div>
+        </div>
+    </footer>
+                                    
+                                                                                                    
+    <script src="scripts.js"></script>                 
+</body>
+</html>
