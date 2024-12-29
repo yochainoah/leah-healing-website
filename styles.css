@@ -20,10 +20,13 @@
     1rem /* horizontal padding */
     clamp(8rem, 20vw, 12rem); /* bottom padding */
 }
-
+@font-face {
+    font-family: 'Judson';
+    src: url('../Judson-Bold.ttf');
+}
 html {
     width: 100vw;
-    font-family: 'Inter' , sans-serif;
+    font-family: 'Inter' , sans-serif, 'Judson';
     scroll-behavior: smooth;
 }
 body {
@@ -94,7 +97,7 @@ html {
         width: 100%;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
-        border-bottom: 1px solid #484848;
+        /* border-bottom: 1px solid #484848; */
         position: fixed;
         z-index: 10000;
     }
@@ -155,7 +158,9 @@ html {
         align-items: center;
     }
     #cs-navigation .cs-logo {
-        width: 9.1875rem;
+        font-family: 'Judson';
+        /* width: 9.1875rem; */
+        width: 100px;
         height: auto;
         margin: 0 auto 0 0;
         padding: 0;
@@ -168,11 +173,12 @@ html {
     }
     #cs-navigation .cs-logo img {
         width: 100%;
-        height: 100%;
+        height: 100px;
         /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
         object-fit: contain;
     }
     #cs-navigation .cs-toggle {
+        cursor: pointer;
         width: 3.5rem;
         height: 3.5rem;
         margin: 0 0 0 auto;
@@ -333,10 +339,10 @@ html {
         position: relative;
     }
     #cs-navigation .cs-li-link.cs-active {
-        color: var(--secondary);
+        color: var(--primary);
     }
     #cs-navigation .cs-li-link:hover {
-        color: var(--secondary);
+        color: var(--primary);
     }
     #cs-navigation .cs-button-solid {
         display: none;
@@ -397,7 +403,7 @@ html {
     }
     #cs-navigation .cs-logo {
         width: 18.4%;
-        max-width: 12.3125rem;
+        max-width: 100px;
         height: 3.75rem;
         /* margin-right auto pushes everything away from it to the right */
         margin: 0 auto 0 0;
@@ -1551,6 +1557,32 @@ html {
       flex-direction: column;
       gap: 0.5rem;
       grid-column: span 12;
+      position: relative;
+    }
+    /* Only target labels containing select elements */
+    #contact-983 .cs-label:has(select)::after {
+        content: '▼';
+        font-size: 12px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        pointer-events: none;
+    }
+
+    /* Add padding only to the select element */
+    #contact-983 select.cs-input {
+        padding-right: 40px;
+    }
+    #contact-983 select.cs-input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-right: 40px;
+    }
+    
+    /* For Firefox - removes the arrow specifically in Firefox */
+    #contact-983 select.cs-input::-ms-expand {
+        display: none;
     }
     #contact-983 .cs-input {
       font-family: inherit;
@@ -1564,11 +1596,40 @@ html {
       background-color: transparent;
       border: 1px solid white;
       border-radius: 70px;
+      padding-right: 25px; /* Make room for custom arrow */
+      cursor: pointer;
+    }
+    /* change built in calendar to white for Chrome */
+    #contact-983 input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(1); /* This turns the black icon white */
+        cursor: pointer;
+    }
+    /* Style for when select is active/focused */
+    #contact-983 .cs-input:focus {
+        outline: none;
+        border: 2px solid white;
     }
     #contact-983 .cs-input::placeholder {
       padding-top: 1rem;
       color: #fff;
       opacity: 0.5;
+    }
+    /* For browsers that support it */
+    #contact-983 .cs-input option:hover,
+    .cs-input option:focus {
+        color: var(--secondary); 
+    }
+
+    /* For Firefox specifically */
+    .cs-input:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 black;
+    }
+
+    /* For better cross-browser support of the dropdown background */
+    .cs-input optgroup,
+    .cs-input option {
+        background-color: white;
     }
     #contact-983 .cs-textarea {
       height: 7.5rem;
@@ -1654,7 +1715,14 @@ html {
       /* Makes img tag act as a background image */
       object-fit: cover;
     }
+    /* Target the options in supported browsers */
+    .cs-input option {
+        background-color: white;
+        color: black;
+        padding: 8px;
+    }
   }
+
   /* Tablet - 768px */
   @media only screen and (min-width: 48rem) {
     #contact-983 .cs-container {
