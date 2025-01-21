@@ -270,7 +270,7 @@ html {
         width: 100%;
         height: auto;
         max-height: 65vh;
-        overflow: scroll;
+        overflow: hidden;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -779,7 +779,6 @@ html {
     }
     #services-1177 .cs-item {
         list-style: none;
-        max-width: 21.875rem;
         width: 100%;
         margin: 0 auto;
         /* prevents padding and border from affecting height and width */
@@ -1062,7 +1061,7 @@ html {
 @media only screen and (min-width: 0rem) {
     #meet-team-699 {
         background-color: white;
-        padding: var(--sectionPadding);
+        padding: 2rem;
         overflow: hidden;
     }
     #meet-team-699 .cs-container {
@@ -1163,7 +1162,7 @@ html {
         margin: 0;
         padding: 0;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         /* 16px - 20px */
         gap: clamp(1rem, 2.3vw, 1.25rem);
         position: relative;
@@ -1178,7 +1177,7 @@ html {
         position: relative;
     }
     #meet-team-699 .cs-item:hover {
-        cursor: pointer;
+        /* cursor: pointer; */
     }
     #meet-team-699 .cs-item:hover .cs-picture:before,
     #meet-team-699 .cs-item:hover .cs-picture:after {
@@ -1289,17 +1288,16 @@ html {
 @media only screen and (min-width: 34.375rem) {
     #meet-team-699 .cs-card-group {
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        /* flex-wrap: wrap;
+        justify-content: space-between; */
         align-items: stretch;
     }
     #meet-team-699 .cs-item {
-        width: 48.3%;
+        width: 100%;
     }
     #meet-team-699 .cs-picture {
-        height: 25.4375rem;
-        /* remove the aspect ratio so the height can be squished */
-        aspect-ratio: initial;
+        aspect-ratio: 0.80589681;
+        object-fit: contain;
     }
 }
 /* Small Desktop - 1200px */
